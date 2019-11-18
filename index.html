@@ -8,6 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         .header-carousel{
             font-size: 2rem;
             font-family: 'Lato', sans-serif;
@@ -16,8 +22,9 @@
         }
         .carousel{
             width: auto;
-            /* height: 700px; */
+            flex-basis: 700px;
             background: rgb(236, 236, 236);
+
         }
         .ticket{
             border: 1px solid #5a5a5a;
@@ -77,9 +84,9 @@
         }
     </style>
 </head>
-<body>
+<main>
     <header class="header-carousel">Pricing Plan based on Materialize</header>
-    <div class="carousel">
+    <main class="carousel">
             <div class="carousel-item ticket">
                 <h6 class="ticket__title">Premier</h6>
                 <header class="ticket__header premier">$25</header>
@@ -171,7 +178,7 @@
                 </ul>
                 <button class="ticket__btn enterprice">Select Plan</button>
             </div>
-    </div>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -179,5 +186,5 @@
     $('.carousel').carousel();
   });
     </script>
-</body>
+</main>
 </html>
