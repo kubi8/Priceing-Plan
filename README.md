@@ -1,3 +1,3 @@
-# pricing plan
+# Pricing plan
 Materialize CSS <br>
 JQuery
